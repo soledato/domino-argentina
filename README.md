@@ -1,4 +1,4 @@
-# blackspike astro landing page
+# Dominó landing page
 
 [<img src="/public/content-images/logo-02.svg" alt="logo de Dominó" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/github-preview.jpg)
 
