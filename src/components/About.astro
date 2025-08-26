@@ -8,7 +8,7 @@ const { title, content, clients, about } = Astro.props
 
   <!-- Title -->
   { title && <h2 class="bs-h2 text-left" set:html={ title } />}
-  { content && <p class="pt-6 bs-text text-left text-sm lg:text-lg line-clamp-4 lg:line-clamp-none" set:html={ content } />}
+  { content && <p class="pt-6 bs-text text-left text-sm lg:text-lg lg:line-clamp-none" set:html={ content } />}
 
   <!-- Logos -->
   <div class="bs-mt-md grid grid-cols-1 md:grid-cols-4 gap-4 ">
