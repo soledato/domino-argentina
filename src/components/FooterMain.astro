@@ -15,7 +15,7 @@ const { settings } = Astro.props
       <div class="relative flex flex-col gap-8 md:gap-0 justify-between text-bs-foreground-light">
 
         <!-- Logo -->
-        <a class="flex group" href="#top" aria-label="Back to top">
+        <a class="flex group" href="/" aria-label="Back to top">
 
           <img src="/public/logo-blanco.png" class="group-hover:-rotate-360 group-hover:scale-80 transition-transform ease-bs-spring duration-1000" height="35%" width="35%" />
 
@@ -59,10 +59,17 @@ const { settings } = Astro.props
   <!-- Colophon -->
   <aside class="bs-container">
 
-      <nav class="flex gap-4 justify-center pt-16 md:pt-24 text-xs">
+      <nav class="flex gap-4 flex-col text-center justify-center pt-16 md:pt-24 text-xs">
 
         <!-- Copyright/Date -->
-        <a href="">by Domino Argentina® </a>
+        <a href="/">Domino Argentina® </a> 
+        <!-- Credits -->
+        <a class="mt-2 md:mt-4" href="mailto:hazloconcabeza@gmail.com">Realizada por
+
+          <div class="flex text-center justify-center items-center gap-2 mt-1">
+            <img src="/public/hcc.png" class="md:w-[8%] w-[30%] justify-center" alt=""> 
+          </div>
+        </a>
 
 
 
