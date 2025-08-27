@@ -1,23 +1,678 @@
 ---
-const { title, espacios } = Astro.props
-import X from '../assets/theme-images/icon-x.svg'
-
+const { title, espacios } = Astro.props;
+import X from "../assets/theme-images/icon-x.svg";
 ---
-<section 
-	title= "espacios"
-	class="second-section text-center relative "
-	data-header-color="red"
-	id="espacios">
-		
-  <header class="bs-container bs-mt-lg">
-    { title && <h2 class="bs-h2 text-center md:text-left">{ title }</h2>}
-	<main class="relative z-10 flex flex-1 flex-col">
 
-		<div class="relative overflow-hidden gap-6">
-			<div class="grid-container pt-10 pb-28 overflow-hidden">
-				<section>
-					<div class=" gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6">
-							
+<section
+  title="espacios"
+  class="second-section text-center relative"
+  data-header-color="red"
+  id="espacios"
+>
+  <header class="bs-container bs-mt-lg">
+    {title && <h2 class="bs-h2 text-center md:text-left">{title}</h2>}
+    <main class="relative z-10 flex flex-1 flex-col">
+      <div class="relative overflow-hidden gap-6">
+        <div class="grid-container pt-10 pb-28 overflow-hidden">
+          <section>
+            <div class="rounded p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Refugio DOMINÓ en Tafí del Valle, Tucumán
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+              <!-- Espacio 1 Tafí-->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/Tafi-02.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Cocina-comedor con mesa rebatible
+                </p>
+                <!-- <p class="line-clamp-2 relative inset-0 z-10 flex items-baseline-last text-center bg-white/25 rounded-t-2xl p-1 text-black">
+									Esta es una descripción de la ventaja o del menú que se está mostrando. Aquí puedes poner información relevante para el usuario, como características, beneficios o cualquier otro detalle que quieras destacar.					
+									</p> -->
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Cocina-comedor con mesa rebatible
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 2 Tafí -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/Tafi-01.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto "
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Estar con camas rebatibles
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Estar con camas rebatibles
+                  </p>
+                </div>
+              </article>
+            </div>
+            <!--Segmento Domi 3x10 exterior con cubierta verde -->
+            <div class="rounded mt-8 p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Módulo DOMINÓ 3.10 con cubierta verde y dormitorio
+                independiente
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+              <!-- Espacio 3 Domi 3x10 exterior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render7b.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista exterior y puerta de ingreso
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista exterior y puerta de ingreso
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 4 Domi 3x10 exterior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render7c.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Otra vista exterior
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Otra vista exterior
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 5 Dominó 3x10 interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render3a.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Dormitorio privado
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Dormitorio privado
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 6 Dominó 3x10 interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render3b.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Estar y comedor integrado
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Estar y comedor integrado
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 7 Dominó 3x10 interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render3c.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Estar y vista del ingreso
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Estar y vista del ingreso
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 8 Dominó 3x10 interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render3f.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Cocina con desayunador integrado
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Cocina con desayunador integrado
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!--Segmento oficinas para predio industrial -->
+            <div class="rounded mt-8 p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Proyecto de oficinas para un predio industrial
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+              <!-- Espacio 9 Dominó industrial exterior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render2e-ofi.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista exterior de dos módulos DOMINÓ ensamblados
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista exterior de dos módulos DOMINÓ ensamblados
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 10 Dominó industrial exterior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render2d-ofi.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista exterior de un módulo DOMINÓ simple
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista exterior de un módulo DOMINÓ simple
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 11 Dominó industrial interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render2a-ofi.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Sala de reuniones y oficina privada
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Sala de reuniones y oficina privada
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 12 Dominó industrial interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render2g-ofi.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Espacio de coworking
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Espacio de coworking
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!--Segmento complejo de viviendas en Vaca Muerta -->
+            <div class="rounded mt-8 p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Proyecto de complejo de viviendas en Vaca Muerta para alquiler
+                permanente
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+              <!-- Espacio 13 Dominó complejo viviendas exterior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render1a-vm.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista exterior. Módulos con autonomía funcional y estructural
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista exterior. Módulos con autonomía funcional y
+                    estructural
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 14 Dominó complejo viviendas baño -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render1c-vm.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Baño
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">Baño</p>
+                </div>
+              </article>
+
+              <!-- Espacio 15 Dominó complejo viviendas interior living -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render1g-vm.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Sala de estar
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Sala de estar
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 16 Dominó complejo viviendas interior cocina-comedor -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render1h-vm.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Cocina-comedor
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Cocina-comedor
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!--Proyecto de estudio-gimnasio para una vivienda -->
+            <div class="rounded mt-8 p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Proyecto de estudio-gimnasio para una vivienda
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+              <!-- Espacio 17 Estudio-gimnasio -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render8a-estudio-gimnasio.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista exterior
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista exterior
+                  </p>
+                </div>
+              </article>
+              <!-- Espacio 18 Estudio-gimnasio -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render8b-estudio-gimnasio.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista interior
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista interior
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!--Proyecto de estudio-gimnasio para una vivienda -->
+            <div class="rounded mt-8 p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Proyecto de baños públicos en San Miguel de Tucumán
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render6a.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista exterior
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista exterior
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 20 baños públicos interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render6c.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista interior
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista interior
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Segmento vivienda 3 módulos interior -->
+            <div class="rounded mt-8 p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Proyecto de vivienda con módulos DOMINÓ ensamblados
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+              <!-- Espacio 21 Vivienda 3 módulos exterior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render9b.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Ingreso y galería
+                </p>
+                <div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Ingreso y galería
+                  </p>
+                </div>
+              </article>
+
+              <!-- Espacio 22 Vivienda 3 módulos interior -->
+              <article
+                class="panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]"
+              >
+                <img
+                  src="/espacios/renders/render9.avif"
+                  alt=""
+                  loading="lazy"
+                  class="aspect-video w-full object-cover rounded-2xl relative"
+                  width="600"
+                  height="auto"
+                />
+                <p
+                  class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold"
+                >
+                  Vista trasera
+                </p>
+                <p class="md:opacity-0 text-lg pt-2 font-normal">
+                  Vista trasera
+                </p>
+              </article>
+            </div>
+            <!-- Módulos prototipo con revestimiento alternativo -->
+            <div class="rounded mt-8 p-3 text-center bg-bs-surface-3">
+              <h3 class="text-center font-semibold md:text-2xl text-xl">
+                Prototipo de módulos DOMINÓ 3.10 con revestimiento alternativo y cubierta verde
+              </h3>
+            </div>
+            <div
+              class="gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6"
+            >
+<!-- Espacio 23 Dominó 3x10 vivienda exterior -->
+            		<article class=" panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]">
+									<img src="/espacios/renders/render22a.avif" alt="" loading="lazy" class="aspect-video w-full object-cover rounded-2xl relative" width="600" height="auto">		
+										<p class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold">
+											Vista frontal
+										</p>
+										<div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista frontal
+                  </p>
+                </div>
+							</article>
+
+							<!-- Espacio 24 Dominó 3x10 vivienda interior -->
+            	<article class=" panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]">
+								<img src="/espacios/renders/render22b.avif" alt="" loading="lazy" class="aspect-video w-full object-cover rounded-2xl relative" width="600" height="auto">
+									<p class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold">
+										Vista posterior
+									</p>
+									<div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista posterior
+                  </p>
+                </div>		
+							</article>
+
+							<!-- Espacio 25 Dominó 3x10 vivienda interior -->
+            	<article class=" panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]">
+                <img src="/espacios/renders/render31.avif" alt="" loading="lazy" class="aspect-video w-full object-cover rounded-2xl relative" width="600" height="auto">	
+              	<p class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold">
+									Ingreso
+								</p>
+								<div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                  Ingreso
+                  </p>
+                </div>		
+						</article>
+
+							<!-- Espacio 25 Dominó 3x10 vivienda interior -->						
+            	<article class=" panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]">
+                <img src="/espacios/renders/render27.avif" alt="" loading="lazy" class="aspect-video w-full object-cover rounded-2xl relative" width="600" height="auto">
+									<p class="opacity-0 rounded-2xl md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-baseline-last text-lg p-2 text-white hover:bg-black/40 font-semibold">
+										Vista trasera
+									</p>
+									<div>
+                  <p class="md:opacity-0 text-lg pt-2 font-normal">
+                    Vista trasera
+                  </p>
+                </div>
+							</article>
+            </div>
+
+            <!-- <div class=" gap-6 md:gap-10 grid md:grid-cols-2 lg:grid-cols-2 mt-6">
 							{ espacios.map( item =>
 								<article class=" panel relative flex rounded-2xl min-w-0 flex-col text-astro-gray-200 transition-transform duration-300 ease-out hover:scale-[1.03]">
 									<img id="image" src={item.link} alt="" loading="lazy" class="aspect-video w-full object-cover rounded-2xl relative">
@@ -26,17 +681,10 @@ import X from '../assets/theme-images/icon-x.svg'
 									</p>
 								</article>
 							)}
-					</div>
-				</section>
-
-			</div>
-			
-			
-		</div>
-		
-		
-	</div>
-</main>
-
-			
+					</div> -->
+          </section>
+        </div>
+      </div>
+    </main>
+  </header>
 </section>
